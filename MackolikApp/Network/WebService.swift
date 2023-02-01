@@ -23,7 +23,7 @@ class Webservice {
             } else if let data = data {
                 do {
                     let matchlist = try JSONDecoder().decode(MatchBase.self, from: data)
-                    print(matchlist)
+                    print(matchlist.matches.first?.round)
                     completion(matchlist)
                 } catch {
                     print(error.localizedDescription)

@@ -21,6 +21,10 @@
 		B706FF8F2989871600AE2DBD /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706FF8E2989871600AE2DBD /* WebService.swift */; };
 		B706FF912989874D00AE2DBD /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706FF902989874D00AE2DBD /* MatchModel.swift */; };
 		B706FF932989883A00AE2DBD /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706FF922989883A00AE2DBD /* UIViewController + Extensions.swift */; };
+		B706FF99298A85AA00AE2DBD /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706FF97298A85AA00AE2DBD /* DetailsVC.swift */; };
+		B706FF9A298A85AA00AE2DBD /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B706FF98298A85AA00AE2DBD /* DetailsVC.xib */; };
+		B706FF9D298A85BC00AE2DBD /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706FF9C298A85BC00AE2DBD /* DetailsCell.swift */; };
+		B706FF9F298A85D900AE2DBD /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B706FF9E298A85D900AE2DBD /* DetailsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		B706FF8E2989871600AE2DBD /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B706FF902989874D00AE2DBD /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
 		B706FF922989883A00AE2DBD /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		B706FF97298A85AA00AE2DBD /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		B706FF98298A85AA00AE2DBD /* DetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
+		B706FF9C298A85BC00AE2DBD /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		B706FF9E298A85D900AE2DBD /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		B706FF782989802200AE2DBD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B706FF96298A859900AE2DBD /* DetailsVC */,
 				B706FF7C2989804E00AE2DBD /* Home */,
 				B706FF6D29897FE400AE2DBD /* LaunchScreen.storyboard */,
 			);
@@ -171,6 +180,25 @@
 			path = "News Cell";
 			sourceTree = "<group>";
 		};
+		B706FF96298A859900AE2DBD /* DetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				B706FF9B298A85B200AE2DBD /* Cell */,
+				B706FF97298A85AA00AE2DBD /* DetailsVC.swift */,
+				B706FF98298A85AA00AE2DBD /* DetailsVC.xib */,
+			);
+			path = DetailsVC;
+			sourceTree = "<group>";
+		};
+		B706FF9B298A85B200AE2DBD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B706FF9C298A85BC00AE2DBD /* DetailsCell.swift */,
+				B706FF9E298A85D900AE2DBD /* DetailsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +262,8 @@
 				B706FF6F29897FE400AE2DBD /* LaunchScreen.storyboard in Resources */,
 				B706FF802989805C00AE2DBD /* HomeVC.xib in Resources */,
 				B706FF6C29897FE400AE2DBD /* Assets.xcassets in Resources */,
+				B706FF9F298A85D900AE2DBD /* DetailsCell.xib in Resources */,
+				B706FF9A298A85AA00AE2DBD /* DetailsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +280,11 @@
 				B706FF7F2989805C00AE2DBD /* HomeVC.swift in Sources */,
 				B706FF87298983D700AE2DBD /* MatchCell.swift in Sources */,
 				B706FF6329897FE300AE2DBD /* AppDelegate.swift in Sources */,
+				B706FF9D298A85BC00AE2DBD /* DetailsCell.swift in Sources */,
 				B706FF8B2989840A00AE2DBD /* NewsCell.swift in Sources */,
 				B706FF6529897FE300AE2DBD /* SceneDelegate.swift in Sources */,
 				B706FF822989836C00AE2DBD /* HomeVM.swift in Sources */,
+				B706FF99298A85AA00AE2DBD /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

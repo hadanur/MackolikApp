@@ -51,6 +51,11 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         cell.configure(match: data)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVC = DetailsVC.create()
+        navigationController?.pushViewController(detailsVC, animated: true)
+    }
 }
 
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
